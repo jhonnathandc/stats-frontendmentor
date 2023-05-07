@@ -138,14 +138,18 @@
         }
 
         li {
-          display: flex;
-          flex-direction: column;
-
           @include type-1(b2, desktop);
           color: $white;
           margin-bottom: 0.2rem;
 
-          span {
+          .number {
+            @include type-1(b2, desktop);
+            color: $white;
+            margin-bottom: 0.2rem;
+          }
+
+          span:not(.number) {
+            display: block;
             @include type-2(b3, desktop);
             color: $gray;
             text-transform: uppercase;
