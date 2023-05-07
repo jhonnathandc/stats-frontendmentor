@@ -1,0 +1,194 @@
+.bg {
+  background-color: $dark;
+
+  .card {
+    display: flex;
+    align-items: center;
+
+    background-color: $purple;
+    box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
+    border-radius: 0.8rem;
+
+    @include responsive(l) {
+      flex-direction: column;
+    }
+
+    @include responsive(m) {
+      flex-direction: column;
+    }
+
+    @include responsive(s) {
+      flex-direction: column;
+    }
+
+    @include responsive(xs) {
+      flex-direction: column;
+    }
+
+    .content {
+      padding: 3.6rem 7.2rem;
+
+      @include responsive(l) {
+        padding: 4rem 0 3.2rem 0;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+      }
+
+      @include responsive(m) {
+        padding: 4rem 3.2rem 3.2rem 3.2rem;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+      }
+
+      @include responsive(s) {
+        padding: 4rem 3.2rem 3.2rem 3.2rem;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+      }
+
+      @include responsive(xs) {
+        padding: 4rem 3.2rem 3.2rem 3.2rem;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+      }
+
+      h1 {
+        @include type-1(h1, desktop);
+        color: $white;
+        margin-bottom: 2.5rem;
+        max-width: 40.3rem;
+
+        @include responsive(l) {
+          margin-bottom: 1.6rem;
+        }
+
+        @include responsive(m) {
+          margin-bottom: 1.6rem;
+        }
+
+        @include responsive(s) {
+          margin-bottom: 1.6rem;
+          @include type-1(h1, mobile);
+        }
+
+        @include responsive(xs) {
+          margin-bottom: 1.6rem;
+          @include type-1(h1, mobile);
+        }
+
+        span {
+          color: $pink;
+        }
+      }
+
+      p {
+        @include type-1(b1, desktop);
+        color: $gray;
+        margin-bottom: 7.2rem;
+        max-width: 37.4rem;
+
+        @include responsive(l) {
+          margin-bottom: 4rem;
+        }
+
+        @include responsive(m) {
+          margin-bottom: 4rem;
+        }
+
+        @include responsive(s) {
+          margin-bottom: 4rem;
+        }
+
+        @include responsive(xs) {
+          margin-bottom: 4rem;
+        }
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 35.1rem;
+
+        @include responsive(s) {
+          flex-direction: column;
+          gap: 2.4rem;
+        }
+
+        @include responsive(xs) {
+          flex-direction: column;
+          gap: 2.4rem;
+        }
+
+        li {
+          display: flex;
+          flex-direction: column;
+
+          @include type-1(b2, desktop);
+          color: $white;
+          margin-bottom: 0.2rem;
+
+          span {
+            @include type-2(b3, desktop);
+            color: $gray;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .image {
+      @include responsive(l) {
+        order: 1;
+      }
+
+      @include responsive(m) {
+        order: 1;
+      }
+
+      @include responsive(s) {
+        order: 1;
+      }
+
+      @include responsive(xs) {
+        order: 1;
+      }
+
+      img {
+        border-radius: 0 0.8rem 0.8rem 0;
+
+        @include responsive(l) {
+          border-radius: 0.8rem 0.8rem 0px 0px;
+        }
+
+        @include responsive(m) {
+          border-radius: 0.8rem 0.8rem 0px 0px;
+        }
+
+        @include responsive(s) {
+          border-radius: 0.8rem 0.8rem 0px 0px;
+        }
+        @include responsive(xs) {
+          border-radius: 0.8rem 0.8rem 0px 0px;
+        }
+      }
+    }
+  }
+}
